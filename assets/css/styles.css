@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  font-family: Raleway;
+  font-size: 14px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: auto;
+}
+
+#menu {
+  background: #f26c4f;
+}
+#menu .container {
+  display: flex;
+  align-items: center;
+}
+
+#menu .container .logo h1 {
+  font-size: 30px;
+  margin: 0;
+  color: #fff;
+}
+
+#menu .container .main-menu {
+  text-align: right;
+  flex: 1;
+}
+#menu .container .main-menu ul {
+  padding: 0;
+  margin: 0;
+}
+#menu .container .main-menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 10px;
+  padding: 15px;
+}
+#menu .container .main-menu ul li.active {
+  border-top: 4px solid #fff;
+}
+#menu .container .main-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 5px;
+}
+
+#banner {
+  background: #f26c4f;
+  position: relative;
+  height: 570px;
+  overflow: hidden;
+}
+
+#banner .bg-star {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#banner .bg-planet-orange {
+  position: absolute;
+  width: 230px;
+  top: 65px;
+  left: 400px;
+  z-index: 10;
+  animation-name: ani-planet-or;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#banner .bg-planet-orange img {
+  width: 100%;
+}
+#banner .bg-planet-violet {
+  position: absolute;
+  width: 550px;
+  top: 160px;
+  right: 180px;
+  z-index: 100;
+  transition-delay: 1px;
+  animation-name: ani-planet-vi;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+#banner .bg-planet-violet img {
+  width: 100%;
+}
+.main-banner {
+  position: relative;
+  z-index: 1000;
+  height: 100%;
+}
+.main-banner .container {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.main-banner .text-box {
+  flex: 1;
+  margin-bottom: 115px;
+  position: relative;
+  padding-left: 30px;
+}
+.main-banner .text-box:after {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  right: 100%;
+}
+.main-banner .text-box h2 {
+  color: #fff;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 60px;
+}
+.main-banner .text-box h4 {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.main-banner .ic-man {
+  height: 530px;
+  margin-right: 120px;
+}
+.main-banner .ic-man img {
+  height: 100%;
+}
+
+#team-work {
+  padding: 100px 0px;
+}
+#team-work .container {
+  display: flex;
+  align-items: center;
+}
+#team-work .text-box {
+  flex: 1;
+  text-align: right;
+}
+#team-work .text-box h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+#team-work .text-box p {
+  margin: 0;
+}
+#team-work .text-box button {
+  margin-top: 50px;
+  border-radius: 0;
+  border: none;
+  background: #f26c4f;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 10px 10px 40px;
+}
+#team-work .work-space {
+  flex: 1;
+  padding-left: 100px;
+}
+#team-work .work-space img {
+  width: 100%;
+}
+
+#footer {
+  background: #f26c4f;
+  padding: 20px 0px;
+}
+#footer p {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@keyframes ani-planet-or {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(10px) translateX(20px);
+  }
+  100% {
+    transform: translateY(0px) translateY(0);
+  }
+}
+
+@keyframes ani-planet-vi {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(5px) translateX(5px);
+  }
+  100% {
+    transform: translateY(0px) translateY(0);
+  }
+}
+
+/* --------- */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  h2 {
+    font-size: 30px !important;
+  }
+}
