@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo cart with jquery</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="menu">
+
+      <style>
+        h1{
+          font-size: 30px;
+          font-weight: bold;
+        }
+        p{
+          font-size: 20px;
+        }
+        input{
+          font-size: 30px;
+          font-weight: 600;
+        }
+      </style>
+
+      
+      <br/><br/>
+
+      <h3>Categories</h3>
+      <p>Choosen item you love</p>
+
+      <br/><br/><br/><br/>
+
+      <div class="list-menu"></div>
+    </div>
+
+
+    <div class="cart">
+      <br/><br/>
+
+      <h3>Your cart</h3>
+      <p>Total item: (<b class="total-item">0</b>)</p>
+
+      <br/><br/><br/><br/>
+
+      <div class="list-cart"></div>
+
+      <br/><br/><br/><br/>
+
+      <div class="calc">
+        <div class="wrapper-calc">
+          <label>Total price:</label>
+          <p><b class="total-price">00</b>Vnđ</p>
+        </div>
+        <div class="wrapper-calc">
+          <label>Tax:</label>
+          <p><b class="tax">00</b>Vnđ</p>
+        </div>
+        <div class="wrapper-calc">
+          <label>Ship fee:</label>
+          <p><b class="ship-fee">00</b>Vnđ</p>
+        </div>
+        <div class="wrapper-calc">
+          <label>Total Payment:</label>
+          <p><b class="total-payment">00</b>Vnđ</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>

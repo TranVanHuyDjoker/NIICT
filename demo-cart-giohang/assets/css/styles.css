@@ -1,0 +1,157 @@
+* {
+  font-size: 14px;
+  font-weight: 400;
+  color: #212121;
+  font-family: roboto;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.menu {
+  flex: 1;
+  padding: 30px 50px;
+}
+
+.menu > h3 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+}
+.menu > p {
+  font-size: 14px;
+  color: #757575;
+}
+
+.menu .item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ebebeb;
+}
+.menu .item:last-child {
+  border: none;
+}
+.menu .item .thumb {
+  height: 70px;
+  width: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.menu .item .thumb img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.menu .item .info {
+  flex: 1;
+}
+.menu .item .info h4 {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.menu .item .info p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f44336;
+}
+.menu .item .info b {
+  color: #f44336;
+}
+.menu .item button {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 15px;
+}
+
+.cart {
+  flex: 1;
+  padding: 30px 50px;
+}
+
+.cart > h3 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+}
+.cart > p {
+  font-size: 14px;
+  color: #757575;
+}
+
+.cart .item-cart {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #bebebe;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.cart .item-cart:last-child {
+  border: none;
+}
+.cart .item-cart .txt-box {
+  flex: 1;
+  margin-right: 20px;
+}
+.cart .item-cart .quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart .item-cart .quantity button,
+.cart .item-cart .quantity input {
+  border: 1px solid #212121;
+  background: none;
+  color: #212121;
+  font-size: 20px;
+  width: 40px;
+  height: 30px;
+}
+
+.cart .item-cart .quantity input {
+  background: #212121;
+  color: #fff;
+  text-align: center;
+  width: 120px;
+}
+
+.cart .item-cart .remove button {
+  padding: 6px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #212121;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.cart .calc {
+  background: #ebebeb;
+  padding: 30px;
+}
+
+.cart .calc .wrapper-calc {
+  display: flex;
+  align-items: center;
+}
+.cart .calc .wrapper-calc p {
+  flex: 1;
+  text-align: right;
+  font-weight: 600;
+}
+.cart .calc .wrapper-calc b {
+  font-weight: 600;
+}
